@@ -54,18 +54,18 @@
 
         <form>
             <div>
-                <label>Your name</label>
-                <input type="text" name="name">
+                <label for="input-name">Your name</label>
+                <input type="text" name="name" id="input-name">
             </div>
 
             <div>
-                <label>Who are we sending this to?</label>
-                <input type="text" name="recipient">
+                <label for="input-recipient">Who are we sending this to?</label>
+                <input type="text" name="recipient" id="input-recipient">
             </div>
 
             <div>
-                Choose a melon
-                <select name="melon">
+                <label for="input-melon">Choose a melon</label>
+                <select name="melon" id="input-melon">
                     <option value="watermelon">Watermelon</option>
                     <option value="canteloupe">Canteloupe</option>
                     <option value="honeydew">Honeydew</option>
@@ -74,27 +74,32 @@
 
             <div>
                 When should we deliver?
-                <input type="radio" name="time" value="am">
-                <label>Morning</label>
+                <input type="radio" name="time" value="am" id="input-time-am">
+                <label for="input-time-am">Morning</label>
 
-                <input type="radio" name="time" value="pm">
-                <label>Evening</label>
+                <input type="radio" name="time" value="pm" id="input-time-pm">
+                <label for="input-time-pm">Evening</label>
 
-                <input type="radio" name="time" value="any">
-                <label>Any time</label>
+                <input type="radio" name="time" value="any" id="input-time-any">
+                <label for="input-time-any">Any time</label>
             </div>
 
             <div>
-                <label>Enter your message:</label>
+                <label for="input-message">Enter your message:</label>
                 <div>
-                    <textarea name="message"></textarea>
+                    <textarea name="message" id="input-message"></textarea>
                 </div>
             </div>
 
             <div>
                 Subscribe to our newsletter
-                <input type="checkbox" name="subscribe" value="yes">
-                <label>Yes</label>
+                <input 
+                    type="checkbox" 
+                    name="subscribe" 
+                    value="yes" 
+                    id="input-subscribe"
+                >
+                <label for="input-subscribe">Yes</label>
             </div>
 
             <button type="submit">Submit query</button>
